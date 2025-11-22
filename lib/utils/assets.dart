@@ -14,4 +14,9 @@ class Assets {
   static const String statisticsIcon = "assets/icons/statistics_icon.png";
   static const String notificationIcon = "assets/icons/notification_icon.png";
   static const String settingsIcon = "assets/icons/settings_icon.png";
+  static const String powerIcon = "assets/icons/power_icon.png";
+  static const String tubelightIcon = "assets/icons/lightbulb_icon.png";
+  static const String consumptionIcon = "assets/icons/consumption_icon.png";
+  static const String powerCapacityIcon = "assets/icons/power_capacity_icon.png";
+  static const String resetIcon = "assets/icons/reset_icon.png";
 }

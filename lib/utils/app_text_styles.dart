@@ -22,6 +22,10 @@ class AppTextStyles {
       fontSize: 16.sp,
       color: AppColors.fullWhiteColor,
       fontWeight: FontWeight.w500);
+  static TextStyle pop500darkGrey30 = GoogleFonts.poppins(
+      fontSize: 30.sp,
+      color: AppColors.darkBlueGreyColor,
+      fontWeight: FontWeight.w500);
   static TextStyle pop400green14 = GoogleFonts.poppins(
       fontSize: 14.sp,
       color: AppColors.appThemeColor,
@@ -41,4 +45,8 @@ class AppTextStyles {
       fontSize: 10.sp,
       color: AppColors.liteGreyColor,
       fontWeight: FontWeight.w500);
+  static TextStyle mon600orange10 = GoogleFonts.montserrat(
+      fontSize: 14.sp,
+      color: AppColors.orangeColor,
+      fontWeight: FontWeight.w600);
 }
