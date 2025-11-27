@@ -104,22 +104,6 @@ class NavigationView extends StatelessWidget {
 
 // ---------------- SAMPLE SCREENS ----------------
 
-class Favorites extends StatelessWidget {
-  const Favorites({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment.center,
-      color: Colors.pink.shade100,
-      child: const Text(
-        "Favorites Screen",
-        style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-      ),
-    );
-  }
-}
-
 class Profile extends StatelessWidget {
   const Profile({super.key});
 
@@ -137,18 +121,3 @@ class Profile extends StatelessWidget {
 }
 
 
-class SettingView extends StatelessWidget {
-  const SettingView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment.center,
-      color: Colors.blue.shade100,
-      child: const Text(
-        "Settings Screen",
-        style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-      ),
-    );
-  }
-}

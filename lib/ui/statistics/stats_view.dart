@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:solar_app/ui/home/home_controller.dart';
+import 'package:solar_app/ui/statistics/stats_controller.dart';
 
 import '../../utils/app_colors.dart';
-import 'widgets/highlighted_status.dart';
-import 'widgets/power_view.dart';
-import 'widgets/solar_power_usage_container.dart';
+import 'widgets/electricity_saved_widget.dart';
+import 'widgets/energy_screen.dart';
 import 'widgets/title_with_switch.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+class StatsView extends StatelessWidget {
+  const StatsView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final ctr = Get.isRegistered<HomeController>()
-        ? Get.find<HomeController>()
-        : Get.put(HomeController());
+    final ctr = Get.isRegistered<StatsController>()
+        ? Get.find<StatsController>()
+        : Get.put(StatsController());
     return Container(
         padding: EdgeInsets.all(18.r),
         alignment: Alignment.center,
@@ -26,10 +25,9 @@ class HomeView extends StatelessWidget {
             children: [
               TitleWithSwitch(ctr: ctr),
               SizedBox(height: 15.h),
-              SolarPowerUsageContainer(ctr: ctr),
-              SizedBox(height: 15.h),
-              HighlightedStatus(ctr: ctr),
-              PowerView()
+              ElectricitySavedWidget(ctr: ctr),
+              SizedBox(height: 20.h),
+              EnergyScreen()
             ],
           ),
         ));

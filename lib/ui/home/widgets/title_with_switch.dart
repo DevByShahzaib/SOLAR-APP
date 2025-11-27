@@ -30,31 +30,29 @@ class TitleWithSwitch extends StatelessWidget {
             ],
           ),
         ),
-        Container(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              Transform.scale(
-                scaleY: 0.7,
-                scaleX: 0.8,
-                child: GetBuilder<HomeController>(builder: (_) {
-                  return Switch(
-                    value: ctr.isSwitch,
-                    onChanged: (value) {
-                      ctr.isSwitch = value;
-                      ctr.update();
-                    },
-                    activeColor: Colors.white,
-                    activeTrackColor: Colors.green,
-                    inactiveThumbColor: Colors.grey,
-                    inactiveTrackColor: Colors.grey.shade400,
-                  );
-                }),
-              ),
-              Text("Switch to main electricity",
-                  style: AppTextStyles.mon500liteGrey10),
-            ],
-          ),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            Transform.scale(
+              scaleY: 0.7,
+              scaleX: 0.8,
+              child: GetBuilder<HomeController>(builder: (_) {
+                return Switch(
+                  value: ctr.isSwitch,
+                  onChanged: (value) {
+                    ctr.isSwitch = value;
+                    ctr.update();
+                  },
+                  activeColor: Colors.white,
+                  activeTrackColor: Colors.green,
+                  inactiveThumbColor: Colors.grey,
+                  inactiveTrackColor: Colors.grey.shade400,
+                );
+              }),
+            ),
+            Text("Switch to main electricity",
+                style: AppTextStyles.mon500liteGrey10),
+          ],
         ),
       ],
     );
